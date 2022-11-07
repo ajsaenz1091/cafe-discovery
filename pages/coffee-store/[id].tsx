@@ -9,7 +9,9 @@ const CoffeeStore = () => {
   return (
     <div>
       {`Coffee Store Page # ${id}`}<br/><br/>
-      <Link href="/">Back to Home</Link>
+      <Link href="/">Back to Home</Link><br/><br/>
+      <Link href="/coffee-store/1">Go to page 1</Link><br/><br/>
+      <Link href="/coffee-store/2">Go to page 2</Link>
     </div>
   )
 }

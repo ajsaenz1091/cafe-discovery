@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 import Banner from '../components/banner/banner'
-import Link from 'next/link'
+import heroImage from '../public/static/hero-image.png'
 
 export default function Home() {
 
@@ -19,7 +20,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Banner buttonText='View stores nearby' handleOnClick={handleOnBannerBtnClick}/>
+        <Banner 
+          buttonText='View stores nearby' 
+          handleOnClick={handleOnBannerBtnClick}
+        />
+        <div className={styles.heroImage}>
+          <Image src={heroImage} alt="hero-image" width={700} height={400}/>
+        </div>
       </main>
     </div>
   )
